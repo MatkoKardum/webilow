@@ -1,14 +1,14 @@
-// import biocwt from "../assets/biocwt.png";
-// // eslint-disable-next-line no-unused-vars
-// import bankist from "../assets/bankist.png";
-// // eslint-disable-next-line no-unused-vars
-// import journal from "../assets/journal.png";
-// // eslint-disable-next-line no-unused-vars
-// import card from "../assets/card.png";
-// // eslint-disable-next-line no-unused-vars
-// import forkify from "../assets/forkify.png";
-// // eslint-disable-next-line no-unused-vars
-// import game from "../assets/game.png";
+import biocwt from "../assets/biocwt.png";
+// eslint-disable-next-line no-unused-vars
+import bankist from "../assets/bankist.png";
+// eslint-disable-next-line no-unused-vars
+import journal from "../assets/journal.png";
+// eslint-disable-next-line no-unused-vars
+import card from "../assets/card.png";
+// eslint-disable-next-line no-unused-vars
+import forkify from "../assets/forkify.png";
+// eslint-disable-next-line no-unused-vars
+import game from "../assets/game.png";
 
 function Projects() {
   return (
