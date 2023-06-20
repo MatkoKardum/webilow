@@ -1,6 +1,6 @@
 import { BsCheckLg } from "react-icons/bs";
 
-function Pricing() {
+function Pricing(props) {
   return (
     <section className="flex flex-col h-[100vh] justify-center items-center max-w-screen-xl m-auto pricings">
       <div className="mb-24 text-center">
@@ -14,7 +14,13 @@ function Pricing() {
       </div>
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center">
-          <div className="flex justify-center items-center flex-col border-solid border-[1px] mx-auto rounded-lg mr-10 border-stone-400 py-8 px-10 bg-[#1f2937]  transition duration-150 ease-linear hover:scale-105">
+          <div
+            className={`flex justify-center items-center flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+              props.darkMode
+                ? "border-stone-400 bg-[#1f2937]"
+                : "border-white bg-white drop-shadow-2xl"
+            }`}
+          >
             <h3 className="text-4xl font-bold">Starter</h3>
             <h4 className="text-gray-400 font-light text-xl my-4 text-center">
               Best option for personal use & for your next project.
@@ -48,7 +54,13 @@ function Pricing() {
               Get started
             </button>
           </div>
-          <div className="flex justify-center items-center flex-col border-solid border-[1px] mx-auto rounded-lg border-stone-400 py-8 px-10 mr-10 bg-[#1f2937] transition duration-150 ease-linear hover:scale-105">
+          <div
+            className={`flex justify-center items-center flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+              props.darkMode
+                ? "border-stone-400 bg-[#1f2937]"
+                : "border-white bg-white drop-shadow-2xl"
+            }`}
+          >
             <h3 className="text-4xl font-bold">Company</h3>
             <h4 className="text-gray-400 font-light text-xl my-4 text-center">
               Best option for personal use & for your next project.
@@ -82,7 +94,13 @@ function Pricing() {
               Get started
             </button>
           </div>
-          <div className="flex justify-center items-center flex-col border-solid border-[1px] rounded-lg border-stone-400 py-8 px-10 bg-[#1f2937] transition duration-150 ease-linear hover:scale-105">
+          <div
+            className={`flex justify-center items-center flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+              props.darkMode
+                ? "border-stone-400 bg-[#1f2937]"
+                : "border-white bg-white drop-shadow-2xl"
+            }`}
+          >
             <h3 className="text-4xl font-bold">Enterprise</h3>
             <h4 className="text-gray-400 font-light text-xl my-4 text-center">
               Best option for personal use & for your next project.

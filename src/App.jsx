@@ -19,13 +19,13 @@ function App() {
       }`}
     >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Hero />
-      <About />
-      <Features />
-      <Pricing />
-      <Technologies />
-      <Contact />
-      <Footer />
+      <Hero darkMode={darkMode} />
+      <About darkMode={darkMode} />
+      <Features darkMode={darkMode} />
+      <Pricing darkMode={darkMode} />
+      <Technologies darkMode={darkMode} />
+      <Contact darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
       {/* <Projects /> */}
     </div>
   );
