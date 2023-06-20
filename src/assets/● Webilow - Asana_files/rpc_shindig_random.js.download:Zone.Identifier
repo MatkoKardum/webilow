@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://accounts.google.com/
+HostUrl=https://apis.google.com/js/rpc:shindig_random.js?onload=init
