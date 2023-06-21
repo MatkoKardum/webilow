@@ -4,7 +4,6 @@ import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 function Navbar(props) {
   const handleClick = (e) => {
     const element = document.querySelector(`.${e.currentTarget.id}`);
-    console.log(element);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -16,7 +15,7 @@ function Navbar(props) {
 
   return (
     <nav
-      className={`w-full rounded-lg ${
+      className={`w-full home rounded-lg ${
         props.darkMode
           ? "bg-gray-800 text-white"
           : "bg-white text-black drop-shadow-xl"

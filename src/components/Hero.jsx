@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import hero from "../assets/hero.png";
 import { FaArrowRight } from "react-icons/fa";
 

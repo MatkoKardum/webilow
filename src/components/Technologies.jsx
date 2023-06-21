@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io";
@@ -10,7 +11,7 @@ import { DiSass } from "react-icons/di";
 import { SiCssmodules } from "react-icons/si";
 import { SiReactquery } from "react-icons/si";
 
-function Technologies() {
+function Technologies(props) {
   return (
     <section className="h-[100vh] flex justify-center items-center flex-col max-w-screen-xl m-auto technologies">
       <div className="text-center mb-24">
@@ -33,7 +34,11 @@ function Technologies() {
         <SiTypescript className="text-blue-600 transition duration-300 hover:scale-125" />
         <FaReact className="text-blue-400 transition duration-300 hover:scale-125" />
         <SiReactquery className="text-red-400 transition duration-300 hover:scale-125" />
-        <TbBrandNextjs className="text-white transition duration-300 hover:scale-125" />
+        <TbBrandNextjs
+          className={`transition duration-300 hover:scale-125 ${
+            props.darkMode ? "text-white" : "text-black"
+          }`}
+        />
         <IoLogoFirebase className="text-yellow-500 transition duration-300 hover:scale-125" />
       </div>
     </section>
