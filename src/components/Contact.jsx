@@ -3,6 +3,9 @@
 function Contact(props) {
   return (
     <section className="h-[80vh] max-w-screen-xl m-auto contact">
+      <h1 className="text-center sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6">
+        Contact us
+      </h1>
       <form
         className={`p-20 rounded-lg ${
           props.darkMode ? "bg-[#1f2937]" : "bg-white drop-shadow-2xl"
@@ -74,7 +77,7 @@ function Contact(props) {
               ? "bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
               : "bg-gray-50 border-gray-300 placeholder-gray-500 text-gray-900 focus:ring-blue-500 focus:border-blue-500"
           }`}
-          placeholder="Write your thoughts here..."
+          placeholder="Write your message here..."
         ></textarea>
         <button
           type="submit"

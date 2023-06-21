@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
+import logo from "../assets/logo.svg";
+import logoDark from "../assets/logo_dark.svg";
 
 function Navbar(props) {
   const handleClick = (e) => {
@@ -22,7 +24,11 @@ function Navbar(props) {
       }`}
     >
       <div className="flex justify-center h-[10vh] items-center m-auto py-5 max-w-screen-xl font-semibold">
-        <span className="mr-auto text-2xl">Website</span>
+        <img
+          src={props.darkMode ? logoDark : logo}
+          alt="logo"
+          className="w-40 mr-auto"
+        />
         <ul className="flex justify-center items-center text-xl">
           <li className="mr-10">
             <a
@@ -117,9 +123,9 @@ function Navbar(props) {
           </button>
           <div className="ml-10 text-xl ">
             {props.darkMode ? (
-              <BsFillMoonStarsFill onClick={changeMode} />
-            ) : (
               <BsFillSunFill onClick={changeMode} />
+            ) : (
+              <BsFillMoonStarsFill onClick={changeMode} />
             )}
           </div>
         </ul>

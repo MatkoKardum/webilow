@@ -14,3 +14,24 @@ body::-webkit-scrollbar-thumb {
   background-color: #1f2937;
   outline: 1px solid #1f2937;
 }
+
+textarea {
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(6, 7, 26, 0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #224b85;
+  outline: 1px solid #224b85;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}

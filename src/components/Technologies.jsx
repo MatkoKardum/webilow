@@ -19,9 +19,9 @@ function Technologies(props) {
           Technologies we use to build our Projects
         </h2>
         <p className="text-2xl w-auto">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-          temporibus nostrum perspiciatis vitae quisquam vero maiores suscipit
-          eligendi commodi pariatur.
+          At Webilow, we utilize a wide array of cutting-edge technologies to
+          build our projects. Our skilled developers harness modern programming
+          languages, frameworks, and tools to deliver high-quality solutions.
         </p>
       </div>
       <div className="flex justify-center items-center text-8xl gap-7">

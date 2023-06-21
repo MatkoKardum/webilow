@@ -13,16 +13,20 @@ function About(props) {
               props.darkMode ? "text-gray-300" : "text-gray-800"
             }`}
           >
-            Since 1984, Flowbite has been serving up grab-and-go frozen
-            daiquiris from its stores across the U.S. Its signature drinks,
-            souvenir cups, and discounted refills have made Flowbite synonymous
-            with great music, good vibes, and starting the best party in town.
+            Since its inception, Webilow has been at the forefront of web
+            development, offering innovative solutions to businesses globally.
+            With a focus on delivering exceptional digital experiences,
+            Webilow&apos;s expert team leverages cutting-edge technologies to
+            create robust and scalable web solutions. From responsive design to
+            seamless payment integration, Webilow empowers companies to unlock
+            their online potential and drive growth in the ever-evolving digital
+            landscape.
           </p>
           <ul className="flex flex-col">
             <ul className="flex">
               <li className="flex-1 p-[10px] text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
-                A/B Testing
+                Responsive design
               </li>
               <li className="flex-1 p-[10px] text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
@@ -42,11 +46,11 @@ function About(props) {
             <ul className="flex">
               <li className="flex-1 p-[10px] text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
-                Craft CMS development
+                Web Maintenance
               </li>
               <li className="flex-1 p-[10px] text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
-                Copywriting
+                Support
               </li>
             </ul>
 
@@ -69,13 +73,14 @@ function About(props) {
               props.darkMode ? "text-gray-300" : "text-gray-800"
             }`}
           >
-            Come 2021, Flowbite had expanded to over 40 locations. The brand’s
-            digital presence existed, but it lacked strategy. Although its
-            target market of 21-30 year-olds was as engaged (and as loyal) as
-            ever, the brand had outgrown its amateur look of the early {`'00s`}
-            and the family-owned business vibes. It needed to show it was a
-            strong brand moving in a new direction - and it was heading there
-            fast.
+            Founded in 2023, Webilow quickly established itself as a leading
+            force in the web development industry. With a strategic focus on
+            delivering professional digital solutions, Webilow emerged as a
+            strong and forward-thinking brand from the very beginning, catering
+            to businesses seeking top-notch web development services. Webilow
+            has rapidly become a renowned and forward-thinking web development
+            company, offering professional digital solutions to businesses
+            seeking cutting-edge online experiences.
           </p>
           <h2 className="text-4xl font-bold mb-6">The challenge</h2>
           <p
@@ -83,12 +88,12 @@ function About(props) {
               props.darkMode ? "text-gray-300" : "text-gray-800"
             }`}
           >
-            Flowbite’s new website would set the tone for all future marketing
-            initiatives, so the brand needed something to showcase its new
-            identity as soon as possible. A tight timeline, paired with the fact
-            that the new management team were still exploring how to shift the
-            brand from what it used to be to what it needed to be, meant that
-            working collaboratively was a must.
+            Webilow faced the challenge of establishing its new brand identity
+            quickly, as its website would serve as a key representation of its
+            future marketing initiatives. With a tight timeline and a management
+            team in the process of transitioning the brand, collaborative
+            efforts were essential to navigate the shift from the company&apos;s
+            previous state to its desired direction.
           </p>
         </div>
       </div>

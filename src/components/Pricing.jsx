@@ -6,17 +6,18 @@ function Pricing(props) {
     <section className="flex flex-col h-[100vh] justify-center items-center max-w-screen-xl m-auto pricings">
       <div className="mb-24 text-center">
         <h2 className="text-6xl font-bold mb-4">
-          Designed for business teams like yours
+          Check out our Pricing packages{" "}
         </h2>
         <p className="text-2xl">
-          Here at Flowbite we focus on markets where technology, innovation, and
-          capital can unlock long-term value and drive economic growth.
+          Check out our Pricing packages designed to suit your budget and
+          requirements. Our transparent pricing model offers flexibility and
+          value, ensuring you get high-quality solutions at competitive rates.
         </p>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center flex-wrap">
         <div className="flex justify-center items-center">
           <div
-            className={`flex justify-center items-center flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+            className={`flex justify-center items-center flex-col flex-1 border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
               props.darkMode
                 ? "border-stone-400 bg-[#1f2937]"
                 : "border-white bg-white drop-shadow-2xl"
@@ -28,7 +29,7 @@ function Pricing(props) {
                 props.darkMode ? "text-gray-400" : "text-gray-800"
               }`}
             >
-              Best option for personal use & for your next project.
+              Affordable custom website with responsive design.
             </h4>
             <p
               className={`mb-8 ${
@@ -41,29 +42,29 @@ function Pricing(props) {
                 }`}
               >
                 $29
-              </span>{" "}
+              </span>
               /month
             </p>
             <ul className="font-medium">
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
-                Individual configuration
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Custom Website Creation
               </li>
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> No
-                setup, or hidden fees
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Responsive Design
               </li>
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> Team
-                size: 1 developer
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                SEO Optimization
               </li>
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
-                Premium support: 6 months
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Content Management System
               </li>
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> Free
-                updates: 6 months
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Ongoing Support
               </li>
             </ul>
             <button
@@ -73,19 +74,19 @@ function Pricing(props) {
             </button>
           </div>
           <div
-            className={`flex justify-center items-center flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+            className={`flex justify-center items-center flex-col flex-1 border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
               props.darkMode
                 ? "border-stone-400 bg-[#1f2937]"
                 : "border-white bg-white drop-shadow-2xl"
             }`}
           >
-            <h3 className="text-4xl font-bold">Company</h3>
+            <h3 className="text-4xl font-bold">Professional</h3>
             <h4
               className={`font-medium text-xl my-4 text-center ${
                 props.darkMode ? "text-gray-400" : "text-gray-800"
               }`}
             >
-              Best option for personal use & for your next project.
+              Advanced e-commerce integration and premium design.
             </h4>
             <p
               className={`mb-8 ${
@@ -98,29 +99,29 @@ function Pricing(props) {
                 }`}
               >
                 $99
-              </span>{" "}
+              </span>
               /month
             </p>
             <ul className="font-medium">
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
-                Individual configuration
-              </li>
-              <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> No
-                setup, or hidden fees
-              </li>
-              <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> Team
-                size: 10 developer
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                E-commerce Integration{" "}
               </li>
               <li className="text-lg mb-2">
                 <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
-                Premium support: 24 months
+                Payment Gateway Integration
               </li>
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> Free
-                updates: 24 months
+                <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
+                Product Catalog Management
+              </li>
+              <li className="text-lg mb-2">
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Order Tracking
+              </li>
+              <li className="text-lg mb-2">
+                <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
+                Conversion Optimization
               </li>
             </ul>
             <button className="w-full text-white bg-blue-600 rounded-md text-xl py-2 mt-4  hover:bg-blue-800 hover:border-blue-800 transition duration-200 active:bg-blue-600 active:border-blue-600">
@@ -128,7 +129,7 @@ function Pricing(props) {
             </button>
           </div>
           <div
-            className={`flex justify-center items-center flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+            className={`flex justify-center items-center flex-1 flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
               props.darkMode
                 ? "border-stone-400 bg-[#1f2937]"
                 : "border-white bg-white drop-shadow-2xl"
@@ -140,10 +141,10 @@ function Pricing(props) {
                 props.darkMode ? "text-gray-400" : "text-gray-800"
               }`}
             >
-              Best option for personal use & for your next project.
+              Customized solutions with optimization and support.{" "}
             </h4>
             <p
-              className={`mb-8 ${
+              className={`mb-8  text-center ${
                 props.darkMode ? "text-gray-300" : "text-gray-700"
               }`}
             >
@@ -153,29 +154,29 @@ function Pricing(props) {
                 }`}
               >
                 $499
-              </span>{" "}
+              </span>
               /month
             </p>
             <ul className="font-medium">
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
-                Individual configuration
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Premium Design Templates{" "}
               </li>
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> No
-                setup, or hidden fees
-              </li>
-              <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> Team
-                size: 100+ developer
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Dedicated Project Manager
               </li>
               <li className="text-lg mb-2">
                 <BsCheckLg className="inline-block text-green-400 mr-2" />{" "}
-                Premium support: 36 months
+                Custom Development
               </li>
               <li className="text-lg mb-2">
-                <BsCheckLg className="inline-block text-green-400 mr-2" /> Free
-                updates: 36 months
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Performance Optimization
+              </li>
+              <li className="text-lg mb-2">
+                <BsCheckLg className="inline-block text-green-400 mr-2" />
+                Website Maintenance
               </li>
             </ul>
             <button className="w-full text-white bg-blue-600 rounded-md text-xl py-2 mt-4  hover:bg-blue-800 hover:border-blue-800 transition duration-200 active:bg-blue-600 active:border-blue-600">
