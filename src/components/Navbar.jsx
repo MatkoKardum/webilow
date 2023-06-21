@@ -32,7 +32,7 @@ function Navbar(props) {
           : "bg-white text-black drop-shadow-xl"
       }`}
     >
-      <div className="block lg:flex relative lg:justify-center h-[10vh] lg:items-center m-auto lg:py-5 max-w-screen-xl font-semibold">
+      <div className="block lg:flex relative justify-center h-[90px] items-center m-auto lg:py-5 max-w-screen-xl font-semibold">
         <img
           src={props.darkMode ? logoDark : logo}
           alt="logo"
