@@ -30,7 +30,11 @@ function Hero(props) {
         </div>
       </div>
       <div>
-        <img src={hero} alt="Hero page image" className="max-w-6xl" />
+        <img
+          src={hero}
+          alt="Hero page image"
+          className="max-w-5xl sm:w-2xl md:w-4xl lg:w-5xl xl:w-6xl"
+        />
       </div>
     </section>
   );

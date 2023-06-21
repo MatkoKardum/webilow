@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
+import { IoCloseSharp } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/logo.svg";
 import logoDark from "../assets/logo_dark.svg";
+import { useState } from "react";
 
 function Navbar(props) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const handleClick = (e) => {
     const element = document.querySelector(`.${e.currentTarget.id}`);
     if (element) {
@@ -15,6 +20,10 @@ function Navbar(props) {
     props.setDarkMode(!props.darkMode);
   };
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <nav
       className={`w-full home rounded-lg ${
@@ -23,14 +32,18 @@ function Navbar(props) {
           : "bg-white text-black drop-shadow-xl"
       }`}
     >
-      <div className="flex justify-center h-[10vh] items-center m-auto py-5 max-w-screen-xl font-semibold">
+      <div className="block lg:flex relative lg:justify-center h-[10vh] lg:items-center m-auto lg:py-5 max-w-screen-xl font-semibold">
         <img
           src={props.darkMode ? logoDark : logo}
           alt="logo"
-          className="w-40 mr-auto"
+          className="ml-5 2xl:ml-0 w-40 mr-auto"
         />
-        <ul className="flex justify-center items-center text-xl">
-          <li className="mr-10">
+        <ul
+          className={`bg-gray-800 flex-col lg:flex-row lg:bg-none justify-center items-center gap-y-5 p-10 lg:p-0 lg:text-xl ${
+            mobileMenuOpen ? "flex" : "hidden"
+          }`}
+        >
+          <li className="lg:mr-10">
             <a
               href="#About"
               className="transition ease-linear duration-100 hover:text-blue-400"
@@ -40,7 +53,7 @@ function Navbar(props) {
               About
             </a>
           </li>
-          <li className="mr-10">
+          <li className="lg:mr-10">
             <a
               href="#Features"
               className="transition ease-linear duration-100 hover:text-blue-400"
@@ -50,7 +63,7 @@ function Navbar(props) {
               Features
             </a>
           </li>
-          <li className="mr-10">
+          <li className="lg:mr-10">
             <a
               href="#Pricings"
               className="transition ease-linear duration-100 hover:text-blue-400"
@@ -60,7 +73,7 @@ function Navbar(props) {
               Pricing
             </a>
           </li>
-          <li className="mr-10">
+          <li className="lg:mr-10">
             <a
               href="#Technologies"
               className="transition ease-linear duration-100 hover:text-blue-400"
@@ -70,7 +83,7 @@ function Navbar(props) {
               Technologies
             </a>
           </li>
-          <li className="mr-10">
+          <li className="lg:mr-10">
             <a
               href="#Contact"
               className="transition ease-linear duration-100 hover:text-blue-400"
@@ -80,7 +93,7 @@ function Navbar(props) {
               Contact
             </a>
           </li>
-          <button className="flex justify-center items-center font-medium text-lg">
+          <button className="flex justify-center items-center font-medium">
             <svg
               className="w-5 h-5 mr-2 rounded-full"
               aria-hidden="true"
@@ -121,7 +134,7 @@ function Navbar(props) {
             </svg>
             <li className="">English (US)</li>
           </button>
-          <div className="ml-10 text-xl ">
+          <div className="lg:ml-10">
             {props.darkMode ? (
               <BsFillSunFill onClick={changeMode} />
             ) : (
@@ -129,6 +142,17 @@ function Navbar(props) {
             )}
           </div>
         </ul>
+        {mobileMenuOpen ? (
+          <IoCloseSharp
+            onClick={toggleMobileMenu}
+            className="absolute bottom-0 top-0 right-5 m-auto text-2xl lg:hidden text-white"
+          />
+        ) : (
+          <GiHamburgerMenu
+            onClick={toggleMobileMenu}
+            className="absolute bottom-0 top-0 right-5 m-auto text-2xl lg:hidden"
+          />
+        )}
       </div>
     </nav>
   );
