@@ -39,7 +39,7 @@ function Navbar(props) {
           className="ml-5 2xl:ml-0 w-40 mr-auto"
         />
         <ul
-          className={`bg-gray-800 flex-col lg:flex-row lg:bg-none justify-center items-center gap-y-5 p-10 lg:p-0 lg:text-xl ${
+          className={`bg-gray-800 flex-col lg:flex lg:flex-row lg:bg-none justify-center items-center gap-y-5 p-10 lg:p-0 lg:text-xl ${
             mobileMenuOpen ? "flex" : "hidden"
           }`}
         >
