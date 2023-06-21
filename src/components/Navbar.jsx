@@ -26,11 +26,11 @@ function Navbar(props) {
 
   return (
     <nav
-      className={`w-full home rounded-lg ${
+      className={`w-full ${
         props.darkMode
           ? "bg-gray-800 text-white"
           : "bg-white text-black drop-shadow-xl"
-      }`}
+      } ${mobileMenuOpen ? "rounded-t-lg rounded-b-none" : "rounded-lg"}`}
     >
       <div className="block lg:flex relative justify-center h-[95px] items-center m-auto lg:py-5 max-w-screen-xl font-semibold">
         <img
@@ -39,7 +39,7 @@ function Navbar(props) {
           className="ml-5 2xl:ml-0 w-40 mr-auto"
         />
         <ul
-          className={`bg-gray-800 flex-col lg:flex lg:flex-row lg:bg-none justify-center items-center gap-y-5 p-10 lg:p-0 lg:text-xl ${
+          className={`bg-gray-800 rounded-b-lg  flex-col lg:flex lg:flex-row lg:bg-none justify-center text-left items-center gap-y-5 pb-5 lg:p-0 lg:text-xl ${
             mobileMenuOpen ? "flex" : "hidden"
           }`}
         >
