@@ -4,9 +4,9 @@ import { AiFillCheckCircle } from "react-icons/ai";
 function About(props) {
   return (
     <section className="h-auto lg:h-screen flex justify-center items-center flex-col max-w-screen-xl m-auto px-2 lg:px-0 about">
-      <h1 className="mb-0 lg:mb-24 text-xl lg:text-6xl font-bold mt-2">
+      <h2 className="mb-0 lg:mb-24 text-xl lg:text-6xl font-bold mt-2">
         Who are we?
-      </h1>
+      </h2>
       <div className="flex flex-col text-left lg:text-left lg:flex-row justify-center items-center mt-2 lg:mt-5">
         <div className="max-w-full md:max-w-[50%]">
           <h2 className="text-md text-center lg:text-4xl font-bold mb-2 lg:mb-6">

@@ -5,10 +5,10 @@ import { BsCircleFill } from "react-icons/bs";
 function Features(props) {
   return (
     <section className="h-auto lg:h-screen flex justify-center items-center flex-col text-center max-w-screen-xl m-auto features">
-      <h2 className="text-center text-6xl mb-28 font-bold">
+      <h2 className="text-center text-xl lg:text-6xl mt-10 mb-10 lg:mb-28 font-bold">
         All in one cloud Software
       </h2>
-      <div className="flex basis-0 gap-10">
+      <div className="flex basis-0 flex-wrap gap-10">
         <div
           className={`relative flex-1 rounded-md border-[1px] border-solid px-10 py-10 transition duration-150 ease-linear hover:translate-y-[-1rem] ${
             props.darkMode
