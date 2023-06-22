@@ -21,7 +21,7 @@ function Features(props) {
           <h2 className="text-lg lg:text-2xl font-semibold mb-2">
             Responsive design{" "}
           </h2>
-          <p className="text-xs lg:text-md font-medium">
+          <p className="lg:text-md text-md font-medium">
             Webilow ensures your website looks and functions flawlessly on any
             device with our responsive design expertise. Engage users seamlessly
             across desktop, tablet, and mobile devices for an optimal user
@@ -40,7 +40,7 @@ function Features(props) {
           <h2 className="text-lg lg:text-2xl font-semibold mb-2">
             UI/UX Design
           </h2>
-          <p className="text-xs lg:text-md font-medium">
+          <p className="text-md lg:text-md font-medium">
             At Webilow, we specialize in creating visually stunning and
             user-friendly interfaces, enhancing overall user experience with
             intuitive navigation, engaging interactions, and appealing
@@ -59,7 +59,7 @@ function Features(props) {
           <h2 className="text-lg lg:text-2xl font-semibold mb-2">
             Search Engine Optimization{" "}
           </h2>
-          <p className="text-xs lg:text-md font-medium">
+          <p className="text-md lg:text-md font-medium">
             Drive organic traffic and enhance online visibility with
             Webilow&apos;s SEO services. Our experts optimize your website with
             proven strategies, improving search engine rankings, attracting
