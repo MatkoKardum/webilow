@@ -3,7 +3,7 @@ import { BsCheckLg } from "react-icons/bs";
 
 function Pricing(props) {
   return (
-    <section className="flex flex-col h-[100vh] justify-center items-center max-w-screen-xl m-auto pricings">
+    <section className="flex flex-col h-auto lg:h-screen justify-center items-center max-w-screen-xl m-auto pricings">
       <div className="mb-24 text-center">
         <h2 className="text-6xl font-bold mb-4">
           Check out our Pricing packages{" "}

@@ -3,13 +3,17 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 function About(props) {
   return (
-    <section className="h-[100vh] flex justify-center items-center flex-col max-w-screen-xl m-auto about">
-      <h1 className="mb-24 text-6xl font-bold">Who are we?</h1>
-      <div className="flex justify-center mt-5">
-        <div className="max-w-[50%]">
-          <h2 className="text-4xl font-bold mb-6">Overview</h2>
+    <section className="h-auto lg:h-screen flex justify-center items-center flex-col max-w-screen-xl m-auto px-2 lg:px-0 about">
+      <h1 className="mb-0 lg:mb-24 text-xl lg:text-6xl font-bold">
+        Who are we?
+      </h1>
+      <div className="flex flex-col text-center lg:text-left lg:flex-row justify-center items-center mt-2 lg:mt-5">
+        <div className="max-w-full lg:max-w-[50%]">
+          <h2 className="text-md lg:text-4xl font-bold mb-2 lg:mb-6">
+            Overview
+          </h2>
           <p
-            className={`mb-10 font-normal text-lg ${
+            className={`mb-4 lg:mb-10 font-normal text-xs lg:text-lg ${
               props.darkMode ? "text-gray-300" : "text-gray-800"
             }`}
           >
@@ -22,54 +26,56 @@ function About(props) {
             their online potential and drive growth in the ever-evolving digital
             landscape.
           </p>
-          <ul className="flex flex-col">
+          <ul className="flex flex-col text-left mb-4 lg:mb-0">
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Responsive design
               </li>
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 UX/UI design
               </li>
             </ul>
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Brand development
               </li>
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Front-end development
               </li>
             </ul>
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Web Maintenance
               </li>
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Support
               </li>
             </ul>
 
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Graphic design
               </li>
-              <li className="flex-1 p-[10px] text-lg font-semibold">
+              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 SEO
               </li>
             </ul>
           </ul>
         </div>
-        <div className="flex items-center flex-col max-w-[50%] ml-16">
-          <h2 className="text-4xl font-bold mb-6">Background</h2>
+        <div className="flex items-center flex-col max-w-full lg:max-w-[50%] lg:ml-16">
+          <h2 className="text-md lg:text-4xl font-bold mb-2 lg:mb-6">
+            Background
+          </h2>
           <p
-            className={`mb-5 font-normal text-lg ${
+            className={`mb-4 lg:mb-5 font-normal  text-xs lg:text-lg ${
               props.darkMode ? "text-gray-300" : "text-gray-800"
             }`}
           >
@@ -82,9 +88,11 @@ function About(props) {
             company, offering professional digital solutions to businesses
             seeking cutting-edge online experiences.
           </p>
-          <h2 className="text-4xl font-bold mb-6">The challenge</h2>
+          <h2 className="text-md lg:text-4xl font-bold mb-2 lg:mb-6">
+            The challenge
+          </h2>
           <p
-            className={`font-normal text-lg ${
+            className={`font-normal text-xs lg:text-lg ${
               props.darkMode ? "text-gray-300" : "text-gray-800"
             }`}
           >

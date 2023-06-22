@@ -4,7 +4,7 @@ import { BsCircleFill } from "react-icons/bs";
 
 function Features(props) {
   return (
-    <section className="h-[100vh] flex justify-center items-center flex-col text-center max-w-screen-xl m-auto features">
+    <section className="h-auto lg:h-screen flex justify-center items-center flex-col text-center max-w-screen-xl m-auto features">
       <h2 className="text-center text-6xl mb-28 font-bold">
         All in one cloud Software
       </h2>

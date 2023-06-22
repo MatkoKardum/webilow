@@ -13,7 +13,7 @@ import { SiReactquery } from "react-icons/si";
 
 function Technologies(props) {
   return (
-    <section className="h-[100vh] flex justify-center items-center flex-col max-w-screen-xl m-auto technologies">
+    <section className="h-auto lg:h-screen flex justify-center items-center flex-col max-w-screen-xl m-auto technologies">
       <div className="text-center mb-24">
         <h2 className="text-6xl font-bold mb-4">
           Technologies we use to build our Projects
