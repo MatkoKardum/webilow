@@ -134,7 +134,7 @@ function Navbar(props) {
             </svg>
             <li className="">English (US)</li>
           </button>
-          <div className="lg:ml-10">
+          <div className="ml-10 mr-5">
             {props.darkMode ? (
               <BsFillSunFill onClick={changeMode} />
             ) : (
