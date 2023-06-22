@@ -7,9 +7,9 @@ function About(props) {
       <h1 className="mb-0 lg:mb-24 text-xl lg:text-6xl font-bold">
         Who are we?
       </h1>
-      <div className="flex flex-col text-center lg:text-left lg:flex-row justify-center items-center mt-2 lg:mt-5">
+      <div className="flex flex-col text-left lg:text-left lg:flex-row justify-center items-center mt-2 lg:mt-5">
         <div className="max-w-full lg:max-w-[50%]">
-          <h2 className="text-md lg:text-4xl font-bold mb-2 lg:mb-6">
+          <h2 className="text-md text-center lg:text-4xl font-bold mb-2 lg:mb-6">
             Overview
           </h2>
           <p
@@ -28,42 +28,42 @@ function About(props) {
           </p>
           <ul className="flex flex-col text-left mb-4 lg:mb-0">
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Responsive design
               </li>
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 UX/UI design
               </li>
             </ul>
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Brand development
               </li>
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Front-end development
               </li>
             </ul>
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Web Maintenance
               </li>
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Support
               </li>
             </ul>
 
             <ul className="flex">
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 Graphic design
               </li>
-              <li className="flex-1 p-[10px] text-sm lg:text-lg font-semibold">
+              <li className="flex-1 p-1 lg:p-[10px] text-xs lg:text-lg font-semibold">
                 <AiFillCheckCircle className="inline-block text-green-500 mt-[-4px]" />{" "}
                 SEO
               </li>
