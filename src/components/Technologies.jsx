@@ -14,17 +14,17 @@ import { SiReactquery } from "react-icons/si";
 function Technologies(props) {
   return (
     <section className="h-auto lg:h-screen flex justify-center items-center flex-col max-w-screen-xl m-auto technologies">
-      <div className="text-center mb-24">
-        <h2 className="text-6xl font-bold mb-4">
+      <div className="text-center mt-10 mb-5 lg:mb-24">
+        <h2 className="text-xl lg:text-6xl font-bold mb-4">
           Technologies we use to build our Projects
         </h2>
-        <p className="text-2xl w-auto">
+        <p className="text-md lg:text-2xl w-auto">
           At Webilow, we utilize a wide array of cutting-edge technologies to
           build our projects. Our skilled developers harness modern programming
           languages, frameworks, and tools to deliver high-quality solutions.
         </p>
       </div>
-      <div className="flex justify-center items-center text-8xl gap-7">
+      <div className="flex justify-center items-center flex-wrap lg:flex-nowrap text-8xl gap-7">
         <AiFillHtml5 className="text-orange-600 transition duration-300 hover:scale-125" />
         <IoLogoCss3 className="text-blue-600 transition duration-300 hover:scale-125" />
         <SiTailwindcss className="text-blue-400 transition duration-300 hover:scale-125" />
