@@ -4,20 +4,20 @@ import { BsCheckLg } from "react-icons/bs";
 function Pricing(props) {
   return (
     <section className="flex flex-col h-auto lg:h-screen justify-center items-center max-w-screen-xl m-auto pricings">
-      <div className="mb-24 text-center">
-        <h2 className="text-6xl font-bold mb-4">
+      <div className="mb-6 lg:mb-24 text-center">
+        <h2 className="text-xl lg:text-6xl font-bold mt-10 mb-1 lg:mb-4">
           Check out our Pricing packages{" "}
         </h2>
-        <p className="text-2xl">
+        <p className="text-sm lg:text-2xl">
           Check out our Pricing packages designed to suit your budget and
           requirements. Our transparent pricing model offers flexibility and
           value, ensuring you get high-quality solutions at competitive rates.
         </p>
       </div>
-      <div className="flex justify-center items-center flex-wrap">
-        <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center flex-wrap px-2">
           <div
-            className={`flex justify-center items-center flex-col flex-1 border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+            className={`flex justify-center items-center flex-col flex-1 border-solid border-[1px] py-8 px-10 mx-auto rounded-lg my-5 lg:my-0 mr-0 lg:mr-10  transition duration-150 ease-linear hover:scale-105 ${
               props.darkMode
                 ? "border-stone-400 bg-[#1f2937]"
                 : "border-white bg-white drop-shadow-2xl"
@@ -74,7 +74,7 @@ function Pricing(props) {
             </button>
           </div>
           <div
-            className={`flex justify-center items-center flex-col flex-1 border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+            className={`flex justify-center items-center flex-col flex-1 border-solid border-[1px] py-8 px-10 mx-auto rounded-lg my-5 lg:my-0 mr-0 lg:mr-10  transition duration-150 ease-linear hover:scale-105 ${
               props.darkMode
                 ? "border-stone-400 bg-[#1f2937]"
                 : "border-white bg-white drop-shadow-2xl"
@@ -129,7 +129,7 @@ function Pricing(props) {
             </button>
           </div>
           <div
-            className={`flex justify-center items-center flex-1 flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg mr-10  transition duration-150 ease-linear hover:scale-105 ${
+            className={`flex justify-center items-center flex-1 flex-col border-solid border-[1px] py-8 px-10 mx-auto rounded-lg my-5 lg:my-0 mr-0 lg:mr-10 transition duration-150 ease-linear hover:scale-105 ${
               props.darkMode
                 ? "border-stone-400 bg-[#1f2937]"
                 : "border-white bg-white drop-shadow-2xl"
