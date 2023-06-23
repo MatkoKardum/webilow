@@ -10,6 +10,7 @@ function Navbar(props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleClick = (e) => {
+    setMobileMenuOpen(false);
     const element = document.querySelector(`.${e.currentTarget.id}`);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -18,6 +19,7 @@ function Navbar(props) {
 
   const changeMode = () => {
     props.setDarkMode(!props.darkMode);
+    localStorage.setItem("darkMode", !props.darkMode);
   };
 
   const toggleMobileMenu = () => {
@@ -32,7 +34,14 @@ function Navbar(props) {
           : "bg-white text-black drop-shadow-xl"
       } ${mobileMenuOpen ? "rounded-t-lg rounded-b-none" : "rounded-lg"}`}
     >
-      <div className="block lg:flex relative justify-center h-[95px] items-center m-auto lg:py-5 max-w-screen-xl font-semibold">
+      <div
+        className={`${
+          mobileMenuOpen ? "block" : "hidden"
+        } fixed z-10 h-full w-screen top-0 left-0 bottom-0 right-0 ${
+          props.darkMode ? "bg-gray-800" : "bg-white"
+        } bg-opacity-70`}
+      ></div>
+      <div className="block lg:flex relative z-20 justify-center h-[95px] items-center m-auto lg:py-5 max-w-screen-xl font-semibold">
         <img
           src={props.darkMode ? logoDark : logo}
           alt="logo"
@@ -41,7 +50,7 @@ function Navbar(props) {
         <ul
           className={`${
             props.darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
-          } rounded-b-lg flex-col lg:flex lg:flex-row lg:bg-none justify-center text-left items-center gap-y-5 pb-5 lg:p-0 lg:text-xl ${
+          }  rounded-b-lg flex-col lg:flex lg:flex-row lg:bg-none justify-center text-left items-center gap-y-5 py-10 lg:p-0 lg:text-xl ${
             mobileMenuOpen ? "flex" : "hidden"
           }`}
         >

@@ -6,11 +6,15 @@ import Pricing from "./components/Pricing";
 import Technologies from "./components/Technologies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import Projects from "./components/Projects";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    setDarkMode(JSON.parse(localStorage.getItem("darkMode")));
+  }, []);
 
   return (
     <div
