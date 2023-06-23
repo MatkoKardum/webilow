@@ -53,7 +53,7 @@ function Footer(props) {
               Pricing
             </a>
           </li>
-          <li>
+          <li className="mr-4">
             <a
               href="#Technologies"
               className="hover:underline"
@@ -61,6 +61,15 @@ function Footer(props) {
               id="technologies"
             >
               Technologies
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:matejkardum1@gmail.com"
+              className="hover:underline"
+              onClick={handleClick}
+            >
+              matejkardum1@gmail.com
             </a>
           </li>
         </ul>

@@ -106,7 +106,7 @@ function Navbar(props) {
                 Contact
               </a>
             </li>
-            <button className="flex justify-center items-center font-medium">
+            {/* <button className="flex justify-center items-center font-medium">
               <svg
                 className="w-5 h-5 mr-2 rounded-full"
                 aria-hidden="true"
@@ -146,8 +146,9 @@ function Navbar(props) {
                 </g>
               </svg>
               <li className="">English (US)</li>
-            </button>
-            <div className="lg:ml-10 lg:mr-5">
+            </button> */}
+            {/* <div className="lg:ml-10 lg:mr-5"> */}
+            <div className="lg:mr-5">
               {props.darkMode ? (
                 <BsFillSunFill onClick={changeMode} />
               ) : (
