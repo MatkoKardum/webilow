@@ -39,7 +39,9 @@ function Navbar(props) {
           className="ml-5 2xl:ml-0 w-40 mr-auto"
         />
         <ul
-          className={`bg-gray-800 rounded-b-lg  flex-col lg:flex lg:flex-row lg:bg-none justify-center text-left items-center gap-y-5 pb-5 lg:p-0 lg:text-xl ${
+          className={`${
+            props.darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
+          } rounded-b-lg flex-col lg:flex lg:flex-row lg:bg-none justify-center text-left items-center gap-y-5 pb-5 lg:p-0 lg:text-xl ${
             mobileMenuOpen ? "flex" : "hidden"
           }`}
         >
@@ -145,12 +147,16 @@ function Navbar(props) {
         {mobileMenuOpen ? (
           <IoCloseSharp
             onClick={toggleMobileMenu}
-            className="absolute bottom-0 top-0 right-5 m-auto text-2xl lg:hidden text-white"
+            className={`absolute bottom-0 top-0 right-5 m-auto text-2xl lg:hidden ${
+              props.darkMode ? "text-white" : "text-black"
+            }`}
           />
         ) : (
           <GiHamburgerMenu
             onClick={toggleMobileMenu}
-            className="absolute bottom-0 top-0 right-5 m-auto text-2xl lg:hidden"
+            className={`absolute bottom-0 top-0 right-5 m-auto text-2xl lg:hidden ${
+              props.darkMode ? "text-white" : "text-black"
+            }`}
           />
         )}
       </div>
