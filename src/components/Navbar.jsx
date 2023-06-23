@@ -2,13 +2,12 @@
 import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-import logo from "../assets/logo.svg";
-import logoDark from "../assets/logo_dark.svg";
+import logo from "../assets/logo2.svg";
+import logoDark from "../assets/logo_dark2.svg";
 import { useState } from "react";
 
 function Navbar(props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const handleClick = (e) => {
     setMobileMenuOpen(false);
     const element = document.querySelector(`.${e.currentTarget.id}`);
