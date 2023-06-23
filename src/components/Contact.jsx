@@ -2,12 +2,12 @@
 
 function Contact(props) {
   return (
-    <section className="h-[80vh] max-w-screen-xl m-auto contact">
-      <h1 className="text-center sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6">
+    <section className="h-[80vh] max-w-screen-xl m-auto contact mt-20">
+      <h1 className="text-center text-xl lg:text-6xl font-bold mb-6">
         Contact us
       </h1>
       <form
-        className={`p-20 rounded-lg ${
+        className={`p-10 max-w-full md:max-w-[50%] lg:max-w-full m-auto lg:p-20 rounded-lg ${
           props.darkMode ? "bg-[#1f2937]" : "bg-white drop-shadow-2xl"
         }`}
       >

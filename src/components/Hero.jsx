@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 function Hero(props) {
   return (
     <section className="h-[90vh] flex flex-col-reverse lg:flex-row justify-center items-center max-w-screen-xl m-auto flex-wrap">
-      <div className="lg:flex-1">
+      <div className="lg:flex-1 max-w-full md:max-w-[50%] lg:max-w-full">
         <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-6xl lg:text-left text-center font-bold mb-2 lg:mb-6">
           Company for{" "}
           <span className="underline text-blue-600">Web Development</span>
@@ -33,7 +33,7 @@ function Hero(props) {
         <img
           src={hero}
           alt="Hero page image"
-          className="max-w-xs sm:max-w-md md:max-w-xl lg:max-w-md xl:max-w-2xl 2xl:max-w-3xl flex justify-center items-center"
+          className="w-auto sm:max-w-xl md:max-w-xl lg:max-w-md xl:max-w-2xl 2xl:max-w-3xl flex justify-center items-center"
         />
       </div>
     </section>
