@@ -18,8 +18,10 @@ function Navbar(props) {
   };
 
   const changeMode = () => {
-    props.setDarkMode(!props.darkMode);
-    localStorage.setItem("darkMode", !props.darkMode);
+    props.setDarkMode((prevState) => {
+      localStorage.setItem("darkMode", !prevState);
+      return !prevState;
+    });
   };
 
   const toggleMobileMenu = () => {
