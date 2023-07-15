@@ -44,11 +44,11 @@ function Navbar(props) {
         } ${mobileMenuOpen ? "rounded-t-lg rounded-b-none" : "rounded-lg"}`}
       >
         <div className="block lg:flex relative z-20 justify-center h-[95px] items-center m-auto lg:py-5 max-w-screen-xl font-semibold">
-{/*           <img
+          <img
             src={props.darkMode ? logoDark : logo}
             alt="logo"
             className="ml-5 2xl:ml-0 w-40 mr-auto"
-          /> */}
+          />
           <ul
             className={`${
               props.darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
